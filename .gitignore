@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Secrets
+.env
+.env.*
+
+# Temporary files
+*.log
+*.tmp
+
+# Generated model checkpoints
+checkpoint-*/
+healthcheck_distilbert/
+healthcheck_distilbert_final/
+
+# Test cache
+.pytest_cache/
+.coverage
+
+# Raw and processed datasets
+data/raw/
+data/processed/
