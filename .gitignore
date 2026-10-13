@@ -1,34 +1,107 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
 
 # Virtual environments
 .venv/
 venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# Jupyter
+# Python packaging and build files
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter notebooks
 .ipynb_checkpoints/
+profile_default/
+ipython_config.py
 
 # macOS
 .DS_Store
 
-# Secrets
+# VS Code
+# .vscode/
+
+# Secrets and environment variables
 .env
 .env.*
+!.env.example
+.envrc
 
-# Temporary files
+# Temporary files and logs
 *.log
 *.tmp
+tempCodeRunnerFile.py
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+.hypothesis/
+coverage.xml
+nosetests.xml
+
+# Type checking and linting
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
 
 # Generated model checkpoints
 checkpoint-*/
 healthcheck_distilbert/
 healthcheck_distilbert_final/
 
-# Test cache
-.pytest_cache/
-.coverage
-
 # Raw and processed datasets
 data/raw/
 data/processed/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Other local configuration
+.pypirc
+.spyderproject
+.spyproject
+.ropeproject
+.abstra/
+.pdm-python
+.pdm-build/
+.pixi/
+__pypackages__/
+
+# Database files
+db.sqlite3
+db.sqlite3-journal
+
+# Documentation build output
+docs/_build/
+site/
+
+**Important:** This keeps your trained `.joblib` models, application, source code, reports, and notebooks eligible for Git tracking. It excludes raw and processed datasets, so ensure any data needed to reproduce your results is documented in your README.
+
+---
+
+## Step 2: Check that the conflict is resolved
+
+Return to your terminal and run:
+
+```bash
+git status
